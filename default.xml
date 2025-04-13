@@ -13,6 +13,13 @@
            review="android-review.googlesource.com"
            revision="refs/tags/android-9.0.0_r46" />
 
+  <remote name="hdx"
+          fetch="https://github.com/cm14-hdx/"
+          revision="lineage-16.0" />
+  <remote name="emmanuel"
+          fetch="https://github.com/DefEmmanuel"
+          revision="lineage-16.0" />
+
   <default revision="refs/heads/lineage-16.0"
            remote="github"
            sync-c="true"
@@ -44,6 +51,8 @@
   <project path="developers/build" name="platform/developers/build" groups="developers" remote="aosp" />
   <project path="development" name="LineageOS/android_development" groups="developers,pdk-cw-fs,pdk-fs" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk" remote="aosp" />
+  <project path="device/amazon/hdx-common" name="device_amazon_hdx-common" remote="hdx" />
+  <project path="device/amazon/thor" name="device_amazon_thor" remote="hdx" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" remote="aosp" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" remote="aosp" />
   <project path="device/generic/car" name="device/generic/car" groups="pdk" remote="aosp" />
@@ -450,6 +459,7 @@
   <project path="hardware/ril" name="LineageOS/android_hardware_ril" groups="pdk" />
   <project path="kernel/configs" name="kernel/configs" groups="vts,pdk" remote="aosp" />
   <project path="kernel/tests" name="kernel/tests" remote="aosp" />
+  <project path="kernel/amazon/hdx-common" name="kernel_amazon_hdx-common.git" remote="hdx" />
   <project path="libcore" name="LineageOS/android_libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" remote="aosp" />
   <project path="packages/apps/BasicSmsReceiver" name="LineageOS/android_packages_apps_BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
